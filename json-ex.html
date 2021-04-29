@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // c1
+        function per(name, age, address){
+            this.ten= name;
+            this.tuoi=age;
+            this.dchi=address;
+        }
+        var a=new per('a',1,'aaaa');
+        console.log(a);
+
+        //c2
+
+        function per1(name,age,address){
+            return{
+                ten: name,
+                tuoi: age,
+                dchi: address,
+            };
+        }
+        a=new per1('b',2,'bbb');
+        console.log(a);
+
+        
+        var perr={
+            name: 'aaaa',
+        };
+        // JSON.parse(); //dổi 1 kiểu string qua json
+        a=JSON.stringify(perr);//đổi json qua string
+        console.log(a);
+
+    </script>
+</body>
+</html>

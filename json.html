@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getInfo('name')">1</button>
+    <button onclick="getInfo('age')">2</button>
+    <script>
+        var gv={
+            name: 'axxxxxxx',
+            age: 18,
+            subject: ['aaa','bbb'],
+            print: function(){
+                return 'abc';
+            },
+            pets:{
+                type:{
+                    name: 'cat',
+
+                }
+            }
+        };
+        // function getInfo(action){
+        //    console.log(gv[action]);
+        // }
+
+        // console.log(gv.name,gv.age,gv.print());//cach 1
+        //cach2
+        // console.log(gv["name"]);
+
+        var arr=['name','age'];
+        for(var i=0;i<arr.length;i++){
+            console.log(gv[arr[i]]);
+        }
+    </script>
+</body>
+</html>

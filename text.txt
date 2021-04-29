@@ -1,0 +1,83 @@
+session: luu theo bo nho dem, mat di khi tat ie(cache)
+local: luu theo dang file
+
+**set
+localstorage.settitem('ten local',dư liệu đẩy vào);
+ten local, chuoi
+sessionstorage.settitem('ten local',dư liệu đẩy vào);
+**get
+localstorage.gettitem('ten local');
+ten local, chuoi
+sessionstorage.gettitem('ten local');
+
+
+VD:
+local.setitem('hieu','hoang van');
+**get
+sessionstorage.gettitem();
+
+chi Truyen theo kieu String
+
+
+
+
+
+json: 1 kieu du lieu, function: 1 dang json
+
+{
+	Key:value (string, int, mảng,...)
+}
+
+VD: var hocsinh={
+	name : "hieu",
+	tuoi: 18
+}
+
+KEY:FrameWork,
+	Design Pattern
+	SOLID
+	DRY
+
+
+
+
+
+
+
+
+
+
+import js...
+
+**GIT
+git - system
+GIT flow:
+ orifin: gốc server
+ conflict:
+ Push: đẩy
+ pull: đưa về
+ fetch: làm mới
+ revert: hoàn tác
+ reset:
+ commit: bản local trước khi đưa lên server
+ brach: nhánh
+ merge: gộp
+ sync: đồng bộ
+
+ stage==commit
+ unstage==hủy bản nháp
+ checkin==push
+ checkout==brach
+
+
+ flow git:
+	master --- End user
+	tách nhánh - brach (file master) - thuật ngữ *clone
+	stage - tạo bản nháp trước khi commit
+	commit - 
+	push (lên nhánh vừa tạo)
+	merger => New_master
+
+ sử dụng:
+	GIT UI
+	git commond line
